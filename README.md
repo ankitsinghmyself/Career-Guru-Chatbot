@@ -1,2 +1,2 @@
-# rasa-chatbot
+# Career Guru Chatbot
  
