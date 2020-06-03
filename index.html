@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+  <center><h1>Welcome To The CareerLabs</h1>
+  <address>All Copyrights &copy;CareerLabs</address></center>
+   <div id="webchat">
+
+	<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+	<script>
+	  WebChat.default.init({
+		selector: "#webchat",
+		initPayload: "hi",
+		customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+		socketUrl: "http://localhost:5005",
+		socketPath: "/socket.io/",
+		title: "CareerGuru",
+		subtitle: "",
+		profileAvatar: "https://www.dropbox.com/s/wrn2hm4xgu3z9wn/download.jpg?raw=1",
+		embedded : false,
+		showCloseButton: true,
+        fullScreenMode: false,
+        //hideWhenNotConnected: false,
+		inputTextFieldHint: "Type a message...",
+        connectingText: "Waiting for server...",
+     
+		openLauncherImage: 'https://www.dropbox.com/s/wrn2hm4xgu3z9wn/download.jpg?raw=1',
+		closeLauncherImage:'https://www.dropbox.com/s/wrn2hm4xgu3z9wn/download.jpg?raw=1',
+		params: {
+      images: {
+        dims: {
+          width: 200,
+          height: 100,
+        }
+      }}
+	  });
+	  WebChat.toggle({
+	  selector: "#webchat",
+	  });
+	  </script>
+	  </div>
+  </body>
+  
+</html>

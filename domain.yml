@@ -1,0 +1,393 @@
+session_config:
+  session_expiration_time: 0.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- contact_us
+- deny
+- emails
+- stream
+- colleges
+- hearAbout
+- mob_num
+- password
+- names
+- Sign_In
+- questions_answers
+- Sign_Up
+- otp_codes
+- reSend_otp
+- Start_Test
+- Restart_Test
+- restart_bot
+- error
+slots:
+  2question_1:
+    type: unfeaturized
+    auto_fill: false
+  2question_2:
+    type: unfeaturized
+    auto_fill: false
+  2question_3:
+    type: unfeaturized
+    auto_fill: false
+  2question_4:
+    type: unfeaturized
+    auto_fill: false
+  2question_5:
+    type: unfeaturized
+    auto_fill: false
+  2question_6:
+    type: unfeaturized
+    auto_fill: false
+  Resend:
+    type: unfeaturized
+    auto_fill: false
+  collegeName:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  full_name:
+    type: unfeaturized
+    auto_fill: false
+  hereAbout:
+    type: unfeaturized
+    auto_fill: false
+  otp:
+    type: unfeaturized
+    auto_fill: false
+  password:
+    type: unfeaturized
+    auto_fill: false
+  phno:
+    type: unfeaturized
+    auto_fill: false
+  question:
+    type: unfeaturized
+    auto_fill: false
+  question_1:
+    type: unfeaturized
+    auto_fill: false
+  question_2:
+    type: unfeaturized
+    auto_fill: false
+  question_3:
+    type: unfeaturized
+    auto_fill: false
+  question_4:
+    type: unfeaturized
+    auto_fill: false
+  question_5:
+    type: unfeaturized
+    auto_fill: false
+  question_6:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  stream:
+    type: unfeaturized
+    auto_fill: false
+responses:
+  utter_ask_email:
+  - text: What's your working email Address?
+  utter_ask_phno:
+  - text: What's your Mobile Number 📲?
+  utter_ask_full_name:
+  - text: What's your Name?
+  utter_ask_otp:
+  - text: Please Enter The OTP Code
+  utter_greet:
+  - text: "Hello !\nWelcome to The CareerLabs by using this chatbot you agree with\
+      \ our [Privacy Policy](https://products.thecareerlabs.com/privacy-policy/)."
+    buttons:
+    - title: Sign In
+      payload: Sign In
+    - title: Sign Up
+      payload: Sign Up
+  utter_goodbye_message:
+  - text: It was very nice talking to you. For more information please visit [CarrerLabs](https://thecareerlabs.com/).&nbsp;&nbsp;  Have
+      a  nice day!
+    buttons:
+    - payload: contact us
+      title: 📞 Contact Us
+    - payload: About CareerLabs
+      title: 🌄 About CareerLabs
+  utter_contact:
+  - text: 'Email Us: [support@thecareerlabs.com](support@thecareerlabs.com) Call Us:
+      &nbsp;📞 6366004441  &nbsp;&nbsp;&nbsp;&nbsp; 🕐 Our office is open monday-friday
+      11 AM-8PM [@CareerLabs](http:/thecareerlabs.com/)'
+  utter_about:
+  - text: We have a proven track record of helping students craft their career journeys.
+      We offer a wide range of preparatory programs for national and international
+      entrance exams, as well as Admissions Consulting Services for Graduate and Business
+      Schools, both abroad and in India. [@CareerLabs](https://thecareerlabs.com/)
+  utter_bye:
+  - text: Good bye see you later
+  utter_ask_collegeName:
+  - text: In which college are you studying?
+  utter_ask_stream:
+  - text: which stream are you form
+  utter_ask_hereAbout:
+  - text: Where did you Hear About Career Labs?
+    buttons:
+    - payload: College Seminar
+      title: College Seminar
+    - payload: Online
+      title: Online
+    - payload: Friend
+      title: Friend
+    - payload: Others
+      title: Others
+  utter_ask_question_1:
+  - text: When I Work, I would like to be known amongst my Work Colleauges for…
+    buttons:
+    - payload: My Coding Ability
+      title: My Coding Ability
+    - payload: My Ability  to Get Things done
+      title: My Ability  to Get Things done
+    - payload: My Creative Work
+      title: My Creative Work
+    - payload: My Ability to Play with Data and Get Insights
+      title: My Ability to Play with Data and Get Insights
+    - payload: My Engineering Mastermind
+      title: My Engineering Mastermind
+  utter_ask_question_2:
+  - text: On a day to day basis at work, I would like to,
+    buttons:
+    - payload: Architect, Design, Develop,Software Products
+      title: Architect, Design, Develop, software Products
+    - payload: Plan and Get things Done
+      title: Plan and Get things Done
+    - payload: Work on animated movies
+      title: Work on animated movies
+    - payload: Analyse Information & Execute Projects
+      title: Analyse Information & Execute Projects
+    - payload: Engineer solutions to real world problems
+      title: Engineer solutions to real world problems
+  utter_ask_question_3:
+  - text: My dream job is (Pick the most relevant option)
+    buttons:
+    - payload: Software Engineer
+      title: Software Engineer
+    - payload: Product Manager
+      title: Product Manager
+    - payload: Character Animator
+      title: Character Animator
+    - payload: Business Analyst
+      title: Business Analyst
+    - payload: Work in my Core Technical field
+      title: Work in my Core Technical field
+  utter_ask_question_4:
+  - text: If I were given an opportunity to give a TED talk, this is the topic I would
+      pick
+    buttons:
+    - payload: How AI can save the world
+      title: How AI can save the world
+    - payload: New Age Marketing
+      title: New Age Marketing
+    - payload: The evolution of Animation Films since Toy Story
+      title: The evolution of Animation Films since Toy Story
+    - payload: The beauty of Analytics and Visualization
+      title: The beauty of Analytics and Visualization
+    - payload: Engineers beyond engineering -- The Art of being an Engineer
+      title: Engineers beyond engineering -- the Art of being an Engineer
+  utter_ask_question_5:
+  - text: I'm most likely to pick up this book
+    buttons:
+    - payload: The art of computer programming
+      title: The art of computer programming
+    - payload: The One Minute Manager
+      title: The One Minute Manager
+    - payload: 'Pixar Storytelling: Rules for Effective Storytelling Based on Pixar’s
+        Greatest Films '
+      title: 'Pixar Storytelling: Rules for Effective Storytelling Based on Pixar’s
+        Greatest Films '
+    - payload: 'Business Analytics for Managers: Taking Business Intelligence Beyond
+        Reporting'
+      title: 'Business Analytics for Managers: Taking Business Intelligence Beyond
+        Reporting'
+    - payload: The essential pleasures of engineering
+      title: The essential pleasures of engineering
+  utter_ask_question_6:
+  - text: If I had an opportunity to work at google, this is what I would work on
+    buttons:
+    - payload: Youtube Recommendation Algorithms
+      title: Youtube Recommendation Algorithms
+    - payload: Making Policy Changes that Help Employees
+      title: Making Policy Changes that Help Employees
+    - payload: Google Creative Team's Projects
+      title: Google Creative Team's Projects
+    - payload: Google Analytics Team's Projects
+      title: Google Analytics Team's Projects
+    - payload: Any Engineering Team in my Domain
+      title: Any Engineering Team in my Domain
+  utter_ask_2question_1:
+  - text: When I Work, I would like to be known amongst my Work Colleagues for…
+    buttons:
+    - payload: My Coding Ability
+      title: My Coding Ability
+    - payload: My Ability  to Get Things done
+      title: My Ability  to Get Things done
+    - payload: My Creative Work
+      title: My Creative Work
+    - payload: My Ability to Play with Data and Get Insights
+      title: My Ability to Play with Data and Get Insights
+    - payload: My Engineering Mastermind
+      title: My Engineering Mastermind
+  utter_ask_2question_2:
+  - text: On a day to day basis at work, I would like to,
+    buttons:
+    - payload: Architect, Design, Develop,Software Products
+      title: Architect, Design, Develop, software Products
+    - payload: Plan and Get things Done
+      title: Plan and Get things Done
+    - payload: Work on animated movies
+      title: Work on animated movies
+    - payload: Analyse Information & Execute Projects
+      title: Analyse Information & Execute Projects
+    - payload: Engineer solutions to real world problems
+      title: Engineer solutions to real world problems
+  utter_ask_2question_3:
+  - text: My dream job is (Pick the most relevant option)
+    buttons:
+    - payload: Software Engineer
+      title: Software Engineer
+    - payload: Product Manager
+      title: Product Manager
+    - payload: Character Animator
+      title: Character Animator
+    - payload: Business Analyst
+      title: Business Analyst
+    - payload: Work in my Core Technical field
+      title: Work in my Core Technical field
+  utter_ask_2question_4:
+  - text: If I were given an opportunity to give a TED talk, this is the topic I would
+      pick
+    buttons:
+    - payload: How AI can save the world
+      title: How AI can save the world
+    - payload: New Age Marketing
+      title: New Age Marketing
+    - payload: The evolution of Animation Films since Toy Story
+      title: The evolution of Animation Films since Toy Story
+    - payload: The beauty of Analytics and Visualization
+      title: The beauty of Analytics and Visualization
+    - payload: Engineers beyond engineering -- The Art of being an Engineer
+      title: Engineers beyond engineering -- the Art of being an Engineer
+  utter_ask_2question_5:
+  - text: I'm most likely to pick up this book
+    buttons:
+    - payload: The art of computer programming
+      title: The art of computer programming
+    - payload: The One Minute Manager
+      title: The One Minute Manager
+    - payload: 'Pixar Storytelling: Rules for Effective Storytelling Based on Pixar’s
+        Greatest Films '
+      title: 'Pixar Storytelling: Rules for Effective Storytelling Based on Pixar’s
+        Greatest Films '
+    - payload: 'Business Analytics for Managers: Taking Business Intelligence Beyond
+        Reporting'
+      title: 'Business Analytics for Managers: Taking Business Intelligence Beyond
+        Reporting'
+    - payload: The essential pleasures of engineering
+      title: The essential pleasures of engineering
+  utter_ask_2question_6:
+  - text: If I had an opportunity to work at google, this is what I would work on
+    buttons:
+    - payload: Youtube Recommendation Algorithms
+      title: Youtube Recommendation Algorithms
+    - payload: Making Policy Changes that Help Employees
+      title: Making Policy Changes that Help Employees
+    - payload: Google Creative Team's Projects
+      title: Google Creative Team's Projects
+    - payload: Google Analytics Team's Projects
+      title: Google Analytics Team's Projects
+    - payload: Any Engineering Team in my Domain
+      title: Any Engineering Team in my Domain
+  utter_ask_retake_test:
+  - text: Do you want to take a retest?
+    buttons:
+    - title: Yes
+      payload: Restart Test
+    - title: No
+      payload: No
+  utter_ask_sign_In:
+  - text: ''
+    buttons:
+    - title: Sign In
+      payload: Sign In
+    - title: Sign Up
+      payload: Sign Up
+  utter_ask_start_test:
+  - text: Do you want to take a Career Track Test?
+    buttons:
+    - title: Yes
+      payload: Start Test
+    - title: No
+      payload: No
+  utter_ask_retry:
+  - text: Please enter a valid OTP code and try again
+    buttons:
+    - payload: Resend OTP
+      title: Resend OTP
+  utter_domain_coding:
+  - text: Coding Career Track &nbsp;  [link🔗]  (https://careerlabs.co.in/#coding)
+    image: https://www.dropbox.com/s/rwuuj69kcpk10db/coding.png?raw=1
+  utter_domian_mgt:
+  - text: MANAGEMENT Career Tracks &nbsp;  [link🔗]  (https://careerlabs.co.in/#Management)
+    image: https://www.dropbox.com/s/kzbdxukcrpxhqnp/mgt.png?raw=1
+  utter_domain_creative:
+  - text: Creative Career Tracks &nbsp;  [link🔗]  (https://careerlabs.co.in/#Creative)
+    image: https://www.dropbox.com/s/uozwm318iinz6ro/creative.png?raw=1
+  utter_domain_techno_mgt:
+  - text: MANAGEMENT Career Tracks &nbsp;  [link🔗]  (https://careerlabs.co.in/#Management)
+    image: https://www.dropbox.com/s/0rgcnmajtdgxpq1/techno_mgt.png?raw=1
+  utter_domain_core:
+  - text: Core Engineering Career Tracks &nbsp;  [link🔗]  (https://careerlabs.co.in/#Core-Engineering)
+    image: https://www.dropbox.com/s/6mnjpxpia6dvq19/core.png?raw=1
+  utter_error_msg:
+  - text: I am still under development I don't understand you can you tell again?
+actions:
+- utter_greet
+- utter_contact
+- utter_about
+- utter_bye
+- utter_ask_full_name
+- utter_ask_collegeName
+- utter_ask_stream
+- utter_ask_hereAbout
+- utter_ask_question_1
+- utter_ask_question_2
+- utter_ask_question_3
+- utter_ask_question_4
+- utter_ask_question_5
+- utter_ask_question_6
+- utter_ask_2question_1
+- utter_ask_2question_2
+- utter_ask_2question_3
+- utter_ask_2question_4
+- utter_ask_2question_5
+- utter_ask_2question_6
+- utter_ask_retake_test
+- utter_ask_email
+- utter_ask_phno
+- utter_ask_otp
+- utter_ask_sign_In
+- utter_ask_start_test
+- utter_goodbye_message
+- utter_ask_retry
+- action_check_otp
+- utter_domian_mgt
+- utter_domain_creative
+- utter_domain_coding
+- utter_domain_techno_mgt
+- utter_domain_core
+- utter_error_msg
+forms:
+- questions_form
+- sign_up_form
+- questions_form2
+- sign_in_form
